@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Poppins-Light.ttf) format('ttf');
+
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Poppins-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/Poppins-SemiBold.ttf) format('ttf');
+}
+
+:root {
+  
+
+  
+
+  --lightGray:#eeeeee;
+  --lightGrayBG:#fbfbfb;
+  --darkBlue:#010f36;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;  
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.topHeader{  
+  height: 40px;
+  padding: 15px 0;
+  border-top: solid 1px var(--lightGray);
+  border-bottom: solid 1px var(--lightGray);
+  background-color: var(--lightGrayBG);
+}
+
+
+/*  logo Section   */
+.logoSection{
+  padding: 10px 0;
+}
+.logoDiv{
+  display: flex;
+  align-items: center;
+}
+.logoDiv li{
+
+}
+/*  logo Section   */
+.paragraph p{
+  font-size: 0.99rem;
+  line-height: 1.65;
+}
+/*  banner   */
+.Homebanner {
+  background: #FBE5DA;
+  background: #e6f1f7;
+  padding-bottom: 44px;
+}
+.carousel-indicators [data-bs-target]{  
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: #132573!important;
+}
+.carousel-indicators .active{
+  position: relative;
+}
+.carousel-indicators .active::after{ 
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid #132573 1px;
+  left: -3.9px;
+  top: -4px;
+}
+/*  banner   */
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+.link{
+    width: 100%;
+    position: relative;
+  }
+  .link span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 0.05em;
+    bottom: 0;
+    left: 0;
+    background: currentcolor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .link:hover span::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #button svg {
+  width: 15px;
+  fill: var(--white);
+}
+
+.copyright{
+  background: var(--darkBlue);
+  margin: 0;
+  padding: 10px 0;
+}
+.copyright p{
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
