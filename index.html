@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
     <title>Bootstrap demo</title>
   </head>
   <body>
@@ -12,19 +13,45 @@
     <section class="topHeader w-100">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li></li>
-                        <li></li>
+                <div class="col-sm-5">
+                    <ul class="MinistryName">
+                        <li><span class="responsive_go_hindi" lang="hi"><a target="_blank" href="https://india.gov.in/hi" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)">भारत सरकार</a></span></li>
+                        <li><span class="li_eng responsive_go_eng"><a target="_blank" href="https://india.gov.in/" title="Government of india,External Link that opens in a new window">Government of india</a></span></li>
                     </ul>
-                    <ul>
-                        <li>
-                            <img src="assets/images/google-translate-icon.svg" class="img-fluid">
-                        </li>
-                        <li>
+                    
+                </div>
+                <div class="col-sm-7">
+                     <ul class="SearchBox">
+                           <li>
+                                <a href="#skipCont" title="Skip to main content">Skip to main content</a>
+                           </li>
+                           <li>
+                                <img src="assets/images/search01.svg" class="img-fluid h-30">
+                           </li>
+                           <li class="dropdownLang">
+                                <!-- <a href="#"><img src="assets/images/font.svg" class="img-fluid h-30"> ▾</a> -->
+                                <a href="#"><img src="assets/images/font2.svg" class="img-fluid h-30"></a>
+                                <ul class="dropdown-menu-02">
+                                    <li><a href="#">A<sup>-</sup></a></li>
+                                    <li><a href="#">A</a></li>  
+                                    <li><a href="#">A<sup>+</sup></a></li>
+                                    <li><a href="#">A</a></li>                                
+                                </ul>
+                            </li>
+                           <li>
+                                <img src="assets/images/sitemap2.svg" class="img-fluid h-30">
+                           </li>
 
-                        </li>
-                    </ul>
+                           <li class="dropdownLang">
+                                <a href="#"><img src="assets/images/google-translate-icon.svg" class="img-fluid h-30"> ▾</a>
+                                <ul class="dropdown-menu-02">
+                                    <li><a href="#">Hindi</a></li>
+                                    <li><a href="#">English</a></li>                                
+                                </ul>
+                            </li>
+                          
+                          
+                        </ul> 
                 </div>
             </div>
         </div>
@@ -58,10 +85,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ's</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -114,23 +144,130 @@
 
 
 
-    <main>
+    <main id="skipCont">
         <div class="container">
             <div class="row">
                 <div class="col-12 paragraph py-5 font-400">
+                    <div class="heading underline">Introduction</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                 </div>
             </div>
         </div>
+
+
+        <section class="pad50">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              
+                
+                <div class="heading underline">Mission</div>
+              
+              <div class="mission">
+                <img src="assets/images/mission.svg" class="img-fluid mx-auto d-block">
+                  <p><strong>Mission :</strong> Develop an enabling platform to serve as the foundation, offering tools and support to empower elders, ensuring they feel valued and integral to an inclusive society. The members will have access to resources for holistic wellbeing, financial independence, personal growth and cultivate meaningful connections.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="heading underline">Vision</div>
+              <div class="vision">                       
+                <p><strong> Vision :</strong>   To create a world where elders thrive with purpose and dignity, empowered by limitless opportunities to build and promote a truly inclusive and compassionate society.</p>
+                <img src="assets/images/vision.svg" class="img-fluid  mx-auto d-block">
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </main>
 
-
-    <footer>
+    <section class="ourpartners-section pad50">
         <div class="container">
             <div class="row">
+              <div class="col-12">
+                <div class="heading">Partners</div>
+              </div>
                 <div class="col-12">
-                    
+                     <!-- Swiper -->
+                     <div class="swiper-container-wrapper">            
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/images/mygov.jpg" alt="buddy" class="img-fluid rounded">
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+
                 </div>
+            </div>
+        </div>
+      </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+					<h5>Contact Us</h5>
+					<address class="text-white">
+						<strong>Ministry of Health &amp; Family Welfare</strong><br>
+						Nirman Bhawan, Near Udyog Bhawan Metro Station,<br> Maulana Azad Rd, New Delhi<br>
+						 Delhi 110011
+
+           
+					</address>					
+				</div>
+<!-- Contact Us
+About Us
+Help
+Disclaimer
+Copyright Policy
+Hyper Linking Policy
+Terms & Conditions
+Feedback
+Web Information Manager -->
+                <div class="col-sm-8">
+					<h5>Quick Links </h5>
+					<ul class="footer-link">	
+						<li><a href="./privacyPolicy">Privacy Policy</a></li>					
+						<li><a href="./disclaimer">Disclaimer </a></li>
+						<li><a href="./termsAndConditions">Terms and Conditions</a></li>
+						<li><a href="./copyrightPolicy">Copyright Policy</a></li>
+						<li><a href="./hyperlinkPolicy">Hyper Link Policy</a></li>
+						<li><a href="./sitemap">Site Map</a></li>						
+					</ul>
+				</div>
+
             </div>
         </div>
     </footer>
@@ -142,23 +279,16 @@
                     <p class="text-white text-center">Website Content Managed by 
                         <a href="#" class="link"><span>Department Name, Ministry Name, Government of India</span></a><span class="d-block"></span>
                         Designed, Developed and Hosted by <a href="#" class="link"><span> Informatics Centre (NIC)</span></a>
-                        Last Updated: July 4, 2025
+                        
                     </p>
-                    <span class="lastUpdate w-100 py-2 text-center d-block text-white">Last Updated: July 4, 2025</span>
+                    <span class="lastUpdate w-100 py-2 text-center d-block text-white border-top mt-2">Last Updated: July 4, 2025</span>
                 </div>
             </div>            
         </div>  
     </section>
      <a id="button">
-    <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 34.21 19.29">
-      <defs>
-        <style>
-          .cls-1 {
-            fill: #fff;
-          }
-        </style>
-      </defs>
+    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 34.21 19.29">     
       <g id="Layer_1-2">
         <path class="cls-1" fill="#ffffff"
           d="M2.5,19.29c-.64,0-1.28-.24-1.77-.73-.98-.98-.98-2.56,0-3.54L14.76,.99c1.32-1.32,3.63-1.32,4.95,0l13.76,13.76c.98,.98,.98,2.56,0,3.54-.98,.98-2.56,.98-3.54,0L17.24,5.59,4.27,18.55c-.49,.49-1.13,.73-1.77,.73Z" />
@@ -167,6 +297,60 @@
   </a>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>  
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      loop:true,
+        autoplay: {
+          delay: 5000,
+        },
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: { slidesPerView: 1, },
+        520: { slidesPerView: 3 },
+        950: { slidesPerView: 6 },
+      },
+    });
+
+
+
+    /// content slider
+
+    var swiper = new Swiper (".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: true,
+    fade: true,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        0: { slidesPerView: 1, },
+        520: { slidesPerView: 2 },
+        950: { slidesPerView: 3 },
+    },
+})
+  
+
+
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/custom.js"></script>
    
   </body>
