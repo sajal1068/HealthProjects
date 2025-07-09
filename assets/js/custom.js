@@ -57,3 +57,28 @@ document.querySelectorAll('.dropdownLang').forEach(item => {
       item.querySelector('.dropdown-menu-02').style.display = 'none';
     });
   });
+
+
+
+
+
+const questions = document.querySelectorAll(".question"); // Get questions *after* they are added to the DOM
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        const active = document.querySelector(".question.active");
+        if (active && active !== question) {
+            active.classList.toggle("active");
+            active.nextElementSibling.style.maxHeight = 0;
+        }
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        answer.style.maxHeight = question.classList.contains("active") ? answer.scrollHeight + "px" : 0;
+    });
+});
+
+
+ $('.arrows').click(function () {
+            $(".contact_info_sec").toggleClass("moveclass", 1000);  
+ });
+    

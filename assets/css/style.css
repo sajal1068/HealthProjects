@@ -534,3 +534,170 @@ footer h5{
     left: 10px;   
   }
 }
+
+
+
+
+
+
+
+/* FAQs */
+
+.containerBox {
+  background-color: white;
+  color: black; 
+  margin: 20px 0;
+  border: solid 1px #e0e0e0;
+  border-radius: 3px;
+}
+
+.question {
+  font-size: 0.99rem;
+  font-weight: 600;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--blue);
+}
+.question::before{
+  content: '';
+  position: absolute;
+  right: 11px;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #86c305;
+  text-align: center;
+}
+.question::after {
+  content: "\002B";
+  font-size: 1.52rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  color: #f1f1f1;
+  font-weight: 400;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  font-size: 0.92rem;
+  line-height: 1.5rem;
+  color: var(--gray);
+  
+}
+
+.question.active + .answercont {
+}
+
+.download-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* FAQs */
+
+/* IMAGE GRID STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.image-grid figure {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 12px;
+  border:solid #f1f1f1 1px;
+}
+.image-grid figure figcaption{
+  width: 100%;
+  padding: 5px;
+  line-height: 1.5;
+  color:#555555;
+  text-align: center;
+  font-size: 1.0rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-grid figure {
+ 
+  transition: box-shadow 0.2s;
+}
+
+.videoGallery figcaption p.card-text{
+  line-height: 1.3;
+  padding: 10px 5px;
+
+}
+.image-grid a:hover figure {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+
+.contact_inner{
+  background-color: #fff;
+  position: relative;
+  box-shadow: 20px 22px 44px #cccc;
+  border-radius: 25px;
+  min-height: 450px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border: solid #fff 5px;
+  border-bottom: 0px;
+}
+
+.contact_info_sec {
+  position: absolute;
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  right: 1px;
+  top: 18%;
+  height: 250px;
+  width: 320px;
+  padding: 40px 35px;
+  border-radius: 25px 0 0 25px;
+  background-color: rgba(2, 39, 89,0.8);
+}
+.address {
+  line-height: 1.5;
+}
+.arrows {
+  position: absolute;
+  width: 20px;
+  height: 31px;
+  background-color: #ffcb00;
+  top: 45%;
+  left: -16px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px;
+  transition: 0.5s;
+}
+
+.contact_info_sec.moveclass{
+  margin-right: -316px;
+  transition: 0.5s;
+}
+.bg-gray{
+  background-color: #f1f1f1;
+}
